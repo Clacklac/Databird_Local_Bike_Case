@@ -4,4 +4,4 @@ SELECT
     stock_quantity,
     store_id
 FROM
-  {{source("Raw_data","stocks")}};
+  {{source("Raw_data","stocks")}}
