@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_raw_data__orders
+    description: '{{ doc("int_raw_data__orders") }}'
+    columns:
+      - name: order_id
+        description: "order_id"
+        tests:
+          - unique
+          - not_null

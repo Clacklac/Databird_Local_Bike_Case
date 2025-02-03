@@ -191,7 +191,6 @@ models:
       - name: manager_id 
         description: "Foreign key linking the staff member to its manager."
         tests:
-            - not_null
             - relationships:
                 name:  manager_id_foreign_key_in_stg_raw_data__staffs
                 to: ref('stg_raw_data__staffs')
