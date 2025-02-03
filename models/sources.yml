@@ -1,0 +1,15 @@
+version: 2
+
+sources: 
+  - name: Raw_data
+    schema: Raw_data
+    tables:
+      - name: brands
+      - name: categories
+      - name: products
+      - name: orders
+      - name: order_items
+      - name: customers
+      - name: staffs
+      - name: stocks
+      - name: stores
