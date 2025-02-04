@@ -4,12 +4,8 @@ models:
   - name: mrt_seasonal_order_report
     description: '{{ doc("mrt_seasonal_order_report") }}'
     columns:
-      - name: order_id
-        description: "order_id"
-        tests:
-          - unique
-          - not_null
       - name : order_date
         description: 'order_date'
         tests: 
           - unique
+          - not_null
