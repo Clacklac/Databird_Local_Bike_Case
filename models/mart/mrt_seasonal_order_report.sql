@@ -20,7 +20,7 @@ GROUP BY order_date,order_month,order_year
 SELECT
     order_month,
     order_year,
-    sum(daily_cnt_order) as monthly_cnt_order,
+    avg(daily_cnt_order) as monthly_avg_daily_cnt_order,
     avg(daily_profit) as monthly_average_daily_profit,
     avg(daily_average_order_amount) as monthly_average_order_amount,
     sum(daily_cnt_orders_delayed)/sum(daily_cnt_order)*100 as monthly_order_delayed_percentage
@@ -50,7 +50,7 @@ SELECT
     ROUND(OD.daily_discount_made,2) AS daily_discount_made,
     ROUND(OD.daily_average_order_discount,2) AS daily_average_order_discount ,
     OD.daily_cnt_orders_delayed,
-    ROUND(OM.monthly_cnt_order,0) AS monthly_cnt_order,
+    ROUND(OM.monthly_avg_daily_cnt_order,0) AS monthly_avg_daily_cnt_order,
     ROUND(OM.monthly_average_daily_profit,2) AS monthly_average_daily_profit,
     ROUND(OM.monthly_average_order_amount,2) AS monthly_average_order_amount,
     ROUND(OM.monthly_order_delayed_percentage,2) AS monthly_order_delayed_percentage,
