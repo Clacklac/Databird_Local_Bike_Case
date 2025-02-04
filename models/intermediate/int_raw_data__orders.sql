@@ -22,6 +22,7 @@ SELECT
     S.staff_name, 
     S.manager_name,    
     So.store_name,
+    So.store_state,
     O.order_date,
     O.order_status,
     O.shipping_delay_in_days,
